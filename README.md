@@ -1,72 +1,47 @@
-# Chismecito - El App de Chismes
+# Chismecito - Spanish Gossip App
 
-Una aplicación social para compartir y descubrir chismes, rumores y noticias del barrio de forma anónima y segura.
+A React-based web application for sharing and discovering gossip/rumors in Spanish.
 
-## Características
+## Project Structure
 
-- 📱 Feed de chismes con reacciones
-- 🎥 Reels de video
-- 🔥 Sistema de reacciones (fuego, risa, tristeza, etc.)
-- 👥 Seguimiento de usuarios
-- 💬 Comentarios en tiempo real
-- 🔒 Privacidad y anonimato
-- ⏰ Chismes que desaparecen en 7 días
+- `src/` - React components and pages
+- `src/components/` - Reusable components
+- `src/pages/` - Page components
+- `src/lib/` - Utilities and services
 
-## Stack Tecnológico
+## Technologies Used
 
-- **Frontend**: React 19, Vite, TailwindCSS
-- **Backend**: Express.js
-- **Base de datos**: Supabase (PostgreSQL)
-- **Almacenamiento**: Backblaze B2
-- **IA**: Google Gemini AI
-- **Auth**: Supabase Auth
+- React 19
+- Vite
+- TypeScript
+- Tailwind CSS
+- Supabase (Backend)
+- AWS S3 / Backblaze B2 (Video storage)
+- Express (Node server)
 
-## Instalación
+## Getting Started
 
-```bash
-npm install
-```
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Desarrollo
+2. Set up environment variables in `.env`
 
-```bash
-npm run dev
-```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
-
-## Build para Producción
+## Build
 
 ```bash
 npm run build
 ```
 
-## Estructura del Proyecto
+## Scripts
 
-```
-chismecito/
-├── src/
-│   ├── pages/
-│   ├── components/
-│   ├── lib/
-│   ├── App.tsx
-│   └── main.tsx
-├── server.ts
-├── package.json
-└── index.html
-```
-
-## Variables de Entorno
-
-Copia `.env.example` a `.env` y configura tus credenciales:
-
-```
-VITE_SUPABASE_URL=tu_url
-VITE_SUPABASE_ANON_KEY=tu_clave
-B2_KEY_ID=tu_id
-B2_APPLICATION_KEY=tu_clave
-```
-
-## Licencia
-
-Apache 2.0
+- `npm run dev` - Start development server
+- `npm run start` - Start production server
+- `npm run build` - Build for production
+- `npm run lint` - Run TypeScript type checking
