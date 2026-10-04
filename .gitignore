@@ -1,8 +1,68 @@
+```
+# Dependencies
 node_modules/
-build/
+
+# Environment variables
+.env.local
+
+# Build outputs
 dist/
-coverage/
-.DS_Store
+build/
+target/
+
+# Cache directories
+.cache/
+.node_cache/
+.npm/
+.yarn/
+
+# Logs
 *.log
-.env*
-!.env.example
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage*
+.nosetests*
+
+# Node.js specific
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+jspm_packages/
+
+# TypeScript/JavaScript build output
+*.tsbuildinfo
+.next/
+nuxt/
+.vuepress/dist
+```
